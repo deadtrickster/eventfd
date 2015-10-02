@@ -2,8 +2,8 @@
 
 (defun eventfd.new (initval &key cloexec (nonblock t) semaphore)
   (let ((flags (logior
-                (if cloexec iolib.syscalls:o-cloexec 0)
-                (if nonblock iolib.syscalls:o-nonblock 0)
+                (if cloexec iolib.syscalls:efd-cloexec 0)
+                (if nonblock iolib.syscalls:efd-nonblock 0)
                 (if semaphore iolib.syscalls:efd-semaphore 0))))
     (iolib.syscalls:eventfd initval flags)))
 
