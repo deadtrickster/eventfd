@@ -15,4 +15,5 @@
                :alexandria)
   :serial t
   :components ((:file "src/package")
+               (cffi-grovel:grovel-file "src/grovel")
                (:file "src/eventfd")))
