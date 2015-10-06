@@ -1,3 +1,6 @@
+(cl:eval-when (:load-toplevel :execute)
+  (asdf:operate 'asdf:load-op 'cffi-grovel))
+
 (in-package :cl-user)
 
 (defpackage :eventfd-system
