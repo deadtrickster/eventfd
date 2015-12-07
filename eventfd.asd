@@ -9,7 +9,7 @@
 (in-package :eventfd-system)
 
 (defsystem :eventfd
-  :version "0.1"
+  :version "0.2"
   :description "IOLib based eventfd bindings"
   :maintainer "Ilya Khaprov <ilya.khaprov@publitechs.com>"
   :author "Ilya Khaprov <ilya.khaprov@publitechs.com>"
