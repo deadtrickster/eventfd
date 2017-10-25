@@ -18,7 +18,7 @@
 ;; TODO: respect host byte order
 (defun int64-to-octet(val)
   (declare (type (signed-byte 64) val)
-           (optimize  (sb-c::insert-debug-catch 0)
+           (optimize  #+sbcl (sb-c::insert-debug-catch 0)
                       (speed 3)
                       (compilation-speed 0)
                       (safety 0)))
